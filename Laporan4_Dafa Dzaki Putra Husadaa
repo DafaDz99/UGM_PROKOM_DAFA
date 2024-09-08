@@ -1,0 +1,133 @@
+Tugas 1
+#Program Persyaratan SIM
+umur = int(input("Masukan Umur Anda = "))
+nilai = int(input("Masukan Nilai Tes Anda = "))
+lulus = "Selamat Anda Berhak Mendapatkan Sim Anda"
+gagal = "Maaf, Anda tidak berhak mendapatkan sim anda\nSilahkan Coba lagi Bulan atau tahun Depan"
+if(umur>17) :
+ if(nilai<60) :
+    print()
+    print(gagal)
+ else :
+    print()
+    print(lulus)
+else :
+    print()
+    print(gagal)
+
+Tugas 2
+#Nama file: if_statement.py
+hari = 3
+if (hari==1):
+    print ("Hari Senin")
+if (hari==2):
+    print ("Hari Selasa")
+if (hari==3):
+    print ("Hari Rabu")
+if (hari==4):
+    print ("Hari Kamis")
+if (hari==5):
+    print ("Hari Jumat")
+if (hari==6):
+    print ("Hari Sabtu")
+if (hari==7):
+    print ("Hari Minggu") 
+
+Tugas 3
+#Nama file: if_elif_else_statement.py
+hari = 9
+if (hari==1):
+    print ("Hari ini hari Senin")
+elif(hari==2):
+    print ("Hari ini hari Selasa")
+elif(hari==3):
+    print ("Hari ini hari Rabu")
+elif(hari==4):
+    print ("Hari ini hari Kamis")
+elif(hari==5):
+    print ("Hari ini hari Jumat")
+elif(hari==6):
+    print ("Hari ini hari Sabtu")
+elif(hari==7):
+    print ("Hari ini hari Minggu")
+else:
+    print ("Hari tidak terdaftar") 
+
+Tugas 4
+#Nama file: nested_if_statement.py
+jenis_kelamin = "Pria"
+umur = 20
+if (jenis_kelamin=="Pria"):
+ if (umur >= 25):
+    print ("Pria boleh menikah")
+ else:
+    print ("Pria tidak boleh menikah")
+elif(jenis_kelamin=="Wanita"):
+ if (umur >= 20):
+    print ("Wanita boleh menikah")
+ else:
+    print ("Wanita tidak boleh menikah")
+else:
+    print ("Jenis kelamin tidak terdaftar") 
+
+Tugas 5
+siswa = ["Siswa A","Siswa B","Siswa C","Siswa D","Siswa E"]
+nilai_A= 80
+nilai_B= 90
+nilai_C= 60
+nilai_D= 75
+nilai_E= 85
+lulus = "Selamat anda dinyatakan lulus"
+gagal = "Maaf anda dinyatakan tidak lulus"
+if(nilai_A>=70) :
+    print()
+    print(siswa[0],lulus)
+else :
+    print()
+    print(siswa[0],gagal)
+if(nilai_B>=70) :
+    print()
+    print(siswa[1],lulus)
+else :
+    print()
+    print(siswa[1],gagal)
+if(nilai_C>=70) :
+    print()
+    print(siswa[2],lulus)
+else :
+    print()
+    print(siswa[2],gagal)
+if(nilai_D>=70) :
+    print()
+    print(siswa[3],lulus)
+else :
+    print()
+    print(siswa[3],gagal)
+if(nilai_E>=70) :
+    print()
+    print(siswa[4],lulus)
+else :
+    print()
+    print(siswa[4],gagal)
+
+Tugas membuat mainan batu,gunting,kertas
+x = (input('permainan batu,gunting,kertas jika x memilih='))
+y = (input('permainan batu,gunting,kertas jika lawan memilih='))
+if x == 'batu' and y == 'gunting':
+    print ('x menang')
+if x == 'kertas' and y == 'batu':
+    print ('x menang')
+if x == 'gunting' and y == 'kertas':
+    print ('x menang')
+if x == 'batu' and y == 'kertas':
+    print ('x kalah')
+if x == 'kertas' and y == 'gunting':
+    print ('x kalah')
+if x == 'gunting' and y == 'batu':
+    print ('x kalah')
+if x == 'batu' and y == 'batu':
+    print ('x seri')
+if x == 'gunting' and y == 'gunting':
+    print ('x seri')
+if x == 'kertas' and y == 'kertas':
+    print ('x seri')
