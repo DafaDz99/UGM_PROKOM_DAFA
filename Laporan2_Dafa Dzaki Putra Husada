@@ -1,0 +1,81 @@
+Dictionary
+d = {1:'satu', 2:'dua', 'tiga':3}
+print( type (d))
+print("d[1] = ", d[1])
+print("d['tiga'] = ", d['tiga'])
+# Error
+print("d[3] = ", d[3])
+
+String
+kalimat = "Nama saya Umar"
+print(kalimat) # print string lengkap
+print(kalimat[0]) # print karakter pertama
+print(kalimat[-1]) # print karakter terakhir
+print(kalimat[4:7]) # print dari indeks 4 - 6
+print(kalimat[:4]) # print dari indeks 0 - 3 
+
+Tugas 1.1
+bil1 = int('1000 ' )
+bil2 = int('200 ' )
+jumlah = bil1 + bil2
+kurang = bil1 - bil2
+kali = bil1 * bil2
+bagi = bil1/bil2
+modulus = bil1 % bil2
+
+print (' hasil dari %d + %d = %d' %(bil1,bil2,jumlah))
+print (' hasil dari %d - %d = %d' %(bil1,bil2,kurang))
+print (' hasil dari %d * %d = %d'%(bil1,bil2,kali))
+print (' hasil dari %d / %d = %d' %(bil1,bil2,bagi))
+print (' hasil dari %d mod %d = %d' %(bil1,bil2,modulus))
+print (' ')
+
+Tugas 1.2
+x = 5
+print(x, "tipenya adalah ", type(x))
+x = 2.0
+print(x, "tipenya adalah ", type(x))
+x = 1+2j
+print(x, "tipenya adalah ",type(x))
+
+Tugas 1.3
+Angka = '12345678982 '
+print(Angka[0])
+print(Angka[-1])
+print(Angka[4:7])
+print(Angka)
+print(Angka[4])
+print(Angka)
+print(Angka[0])
+
+Tugas 1.4
+# program pertama
+print ("PRAKTIKUM PEMROGRAMAN KOMPUTER")
+print ("Berikut contoh program penambahan")
+a = 2
+b = 3
+hasil = a + b
+print ("hasil = a + b")
+print ("hasil = %d + %d" % (a,b))
+print ("hasil = %d" % (hasil))
+
+Tugas 2
+# Mencari Kesalahan / Debugging
+print ("Hello, World!")
+print (2 + 2)
+print ("Test 123")
+a = 2 * 4
+print (a)
+
+Tugas membuat jam
+n = 100000
+a = 60*60*24
+hari = n//a
+b = a*hari
+c = n-b
+jam = c//(60*60)
+d = jam *(60*60)
+e = c-d
+menit = e//60
+detik = n%60
+print ("%d hari %d jam %d menit %d detik"% (hari, jam, menit, detik))
