@@ -1,0 +1,108 @@
+Tugas 1
+feeling = input('How are you?')
+if feeling.lower() == 'great':
+    print('I feel great too.')
+else:
+    print('I hope the rest of your day is good.') 
+
+Tugas 2
+m = ['Alice', 'ants', 'Bob', 'badgers', 'Carol', 'cats']
+m.sort()
+m
+print(m)
+spam = ['a', 'z', 'A', 'Z']
+spam.sort(key=str.lower)
+spam
+print(spam)
+
+Tugas 3
+from operator import *
+a = 1
+b = 5.0
+print('a = {}'.format(a))
+print('b = {}'.format(b))
+for func in (lt, le, eq, ne, ge, gt):
+    print ('{}(a, b): {}'.format(func.__name__, func(a, b))) 
+
+Tugas 4
+str = "Py'thon"
+str
+str2 = 'Py"thon'
+str2
+typing = "\"OK, sampai ketemu lagi.\" "
+print(typing)
+teks = '''Python adalah bahasa pemrograman yang powerfull.\nTerbukti
+Python bisa dijalankan di segala platform OS.\nJadi, saatnya kita menggunakan
+Python sebagai bahasa permrograman \nsehari-hari. Salam Python Dahsyat!'''
+print(teks)
+kata = """Python adalah bahasa pemrograman yang powerfull.
+Terbukti Python bisa dijalankan di segala platform OS.
+Jadi, saatnya kita menggunakan Python sebagai bahasa pemrograman
+sehari-hari. Salam Python Dahsyat!"""
+print(kata)
+
+Tugas 5
+blog = 'Klinik' + 'Python'
+blog
+newblog = blog*5
+newblog
+blog *= 4
+print(blog)
+string = 'Klinik' 'Python'
+string
+buah = 'Nanas'
+buah[0]
+buah[0:2]
+buah[0:4]
+buah[0:5]
+print(string)
+print(buah)
+
+Tugas 6
+a = '''Dear Alice,
+How have you been?I am fine.
+There is a container in the fridge
+that is labeled "Milk Experiment".
+Please do not drink it.
+Sincerely,
+Bob'''
+a.split('\n')
+print(a)
+
+Tugas 7
+z = [1, 3, 2, 4, 'Alice', 'Bob']
+z.sort(key=str)
+print (z)
+print("Hello there!\nHow are you?\nI\'m doing fine.")
+  
+multi_line = """Hello there!
+How are you?
+I'm fine."""
+print(multi_line)
+spam = ' Hello World '
+spam.strip()
+spam.lstrip()
+spam.rstrip()
+print(spam)
+print(', '.join(['cats', 'rats', 'bats']))
+print(' '.join(['My', 'name', 'is', 'Simon']))
+print('ABC'.join(['My', 'name', 'is', 'Simon']))
+print('My name is Simon'.split())
+print('MyABCnameABCisABCSimon'.split('ABC'))
+print('My name is Simon'.split('m') )
+
+Tugas 8
+print('Hello world!'.startswith('Hello'))
+print('Hello world!'.endswith('world!'))
+print('abc123'.startswith('abcdef'))
+print('abc123'.endswith('12'))
+print('Hello world!'.startswith('Hello world!'))
+print('Hello world!'.endswith('Hello world!'))
+print('Hello'.rjust(10))
+print('Hello'.rjust(20))
+print('Hello World'.rjust(20))
+print('Hello'.ljust(10))
+print('Hello'.rjust(20, '*'))
+print('Hello'.ljust(20, '-'))
+print('Hello'.center(20))
+print('Hello'.center(20, '=')) 
