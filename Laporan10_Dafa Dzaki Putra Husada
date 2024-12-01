@@ -1,0 +1,124 @@
+Tugas 1
+grid = [
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90]
+]
+target = 50
+
+found = False
+for row in range(len(grid)):
+    for col in range(len(grid[0])):
+        if grid[row][col] == target:
+            print(f"Element {target} found at ({row}, {col})")
+            found = True
+            break
+    if found:
+        break
+if not found:
+    print(f"Element {target} not found")
+
+Tugas 2
+X = [
+        [12, 7],
+        [4, 5 ],
+        [3, 8 ]
+    ]
+
+result = [
+            [0, 0, 0],
+            [0, 0, 0]
+        ]
+
+# iterate through rows
+for i in range(len(X)):
+    # iterate through columns
+    for j in range(len(X[0])):
+        result[j][i] = X[i][j]
+
+for r in result:
+    print(r) 
+
+Tugas 3
+# Membuat array 2 dimensi 4x2 dengan angka dari 10 hingga 17
+array_2d = [[10, 11], [12, 13], [14, 15], [16, 17]]
+# Menampilkan elemen pada kolom pertama
+baris= [ ]
+for baris in array_2d:
+    baris.append([])
+    print(baris[0],end=" ")
+
+Tugas 4
+#Membuat matriks kosong dengan ukuran 2x3
+matriks = []
+
+# Mendapatkan input dari pengguna untuk mengisi matriks
+for i in range(2):  # Iterasi untuk setiap baris
+    baris = []
+    for j in range(3):  # Iterasi untuk setiap kolom pada baris
+        nilai = int(input(f"Masukkan nilai ke-[{i}][{j}]: "))
+        baris.append(nilai)
+    matriks.append(baris)
+    print("---------------------")  
+# Menampilkan matriks yang telah diisi
+for baris in matriks:
+    for nilai in baris:
+        print(nilai, end=" ")
+    print()
+
+Tugas 5
+daftar = [
+    [10, 15, 20],
+    [25, 30, 35],
+    [40, 45, 50]
+]
+jumlah_genap = 0
+jumlah_ganjil = 0
+# Iterasi melalui setiap elemen dalam array
+for baris in daftar:
+    for angka in baris:
+        if angka % 2 == 0:
+            jumlah_genap += 1
+        else:
+            jumlah_ganjil += 1
+
+# Cetak hasil
+print("Jumlah elemen genap:", jumlah_genap)
+print("Jumlah elemen ganjil:", jumlah_ganjil)
+
+Tugas 6
+# Definisi array multidimensi
+array1 = [[4, 6],
+          [1, 7]]
+
+array2 = [[2, 3],
+          [5, 6]]
+# Fungsi untuk menjumlahkan dua array
+def jumlahkan_array(array1, array2):
+    hasil = []
+    for i in range(len(array1)):
+        baris = []
+        for j in range(len(array1[0])):
+            baris.append(array1[i][j] + array2[i][j])
+        hasil.append(baris)
+    return hasil
+# Fungsi untuk mengurangkan dua array
+def kurangkan_array(array1, array2):
+    hasil = []
+    for i in range(len(array1)):
+        baris = []
+        for j in range(len(array1[0])):
+            baris.append(array1[i][j] - array2[i][j])
+        hasil.append(baris)
+    return hasil
+# Menghitung penjumlahan dan pengurangan
+hasil_penjumlahan = jumlahkan_array(array1, array2)
+hasil_pengurangan = kurangkan_array(array1, array2)
+# Menampilkan hasil
+print("Hasil Penjumlahan:")
+for baris in hasil_penjumlahan:
+    print(baris)
+
+print("\nHasil Pengurangan:")
+for baris in hasil_pengurangan:
+    print(baris)
