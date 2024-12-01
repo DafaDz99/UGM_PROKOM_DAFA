@@ -1,0 +1,60 @@
+Tugas 1
+# import module matematika math 
+import math 
+# Input koefisien dari keyboard 
+a = int(input("Masukkan a: ")) 
+b = int(input("Masukkan b: ")) 
+c = int(input("Masukkan c: ")) 
+# hitung diskriminan d 
+d = (b**2)-(4*a*c) 
+# menemukan x1 dan x2 
+if d >= 0:
+    x1 = (-b + math.sqrt(d)) / (2*a)
+    x2 = (-b - math.sqrt(d)) / (2*a)
+    print('Solusinya adalah {} dan {}'.format(x1, x2))
+else:
+    print('Persamaan tidak memiliki akar real')
+
+Tugas 2
+def menu():
+    print("Pilih Bentuk 2D:")
+    print("1. Persegi Panjang")
+    print("2. Lingkaran")
+    print("3. Segitiga")
+    print("4. Keluar")
+
+def hitung_luas_persegi_panjang():
+    panjang = float(input("Masukkan panjang: "))
+    lebar = float(input("Masukkan lebar: "))
+    luas = panjang * lebar
+    print("Luas persegi panjang adalah:", luas)
+
+def hitung_luas_lingkaran():
+    jari_jari = float(input("Masukkan jari-jari: "))
+    luas = 3.14 * jari_jari**2
+    print("Luas lingkaran adalah:", luas)
+
+def hitung_luas_segitiga():
+    alas = float(input("Masukkan alas: "))
+    tinggi = float(input("Masukkan tinggi: "))
+    luas = 0.5 * alas * tinggi
+    print("Luas segitiga adalah:", luas)
+
+def main():
+    while True:
+        menu()
+        pilihan = input("Masukkan pilihan Anda (1-4): ")
+        if pilihan == '1':
+            hitung_luas_persegi_panjang()
+        elif pilihan == '2':
+            hitung_luas_lingkaran()
+        elif pilihan == '3':
+            hitung_luas_segitiga()
+        elif pilihan == '4':
+            print("Terima kasih!")
+            break
+        else:
+            print("Pilihan tidak valid.")
+
+if __name__ == "__main__":
+    main()
