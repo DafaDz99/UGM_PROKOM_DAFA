@@ -1,0 +1,144 @@
+Tugas 1
+nilai_mahasiswa = []
+
+while True:
+    print("\nMenu:")
+    print("1. Tambahkan data nilai mahasiswa")
+    print("2. Tampilkan semua data nilai mahasiswa")
+    print("3. Tampilkan data nilai mahasiswa yang memiliki nilai tertinggi")
+    print("4. Keluar")
+    pilihan = int(input("Masukkan pilihan: "))
+    if pilihan == 1:
+        nilai = int(input("Masukkan nilai mahasiswa: "))
+        nilai_mahasiswa.append(nilai)
+        print("Data nilai mahasiswa yang telah ditambahkan:", nilai_mahasiswa)
+    elif pilihan == 2:
+        if nilai_mahasiswa:
+            print("Semua data nilai mahasiswa:", nilai_mahasiswa)
+        else:
+            print("Data nilai mahasiswa masih kosong")
+    elif pilihan == 3:
+        if nilai_mahasiswa:
+            print("Data nilai mahasiswa yang memiliki nilai tertinggi:", max(nilai_mahasiswa))
+        else:
+            print("Data nilai mahasiswa masih kosong")
+    elif pilihan == 4:
+        break
+    else:
+        print("Pilihan tidak valid")
+
+Tugas 2
+
+#deklarasi array
+angka = []
+#masukkan lima angka
+for i in range (5):
+    nilai=float(input(f"masukkan nilai ke-{i+1}: "))
+    angka.append(nilai)
+    # Tampilkan angka yang sudah dimasukkan sejauh ini
+    print(f"Angka yang sudah dimasukkan: {angka}")
+#hitung jumlah totaldef bilangan_prima(angka):
+  if angka <= 1:
+    return False
+  if angka <= 3:
+    return True
+  if angka % 2 == 0 or angka % 3 == 0:
+    return False
+  i = 5
+  while i * i <= angka:
+    if angka % i == 0 or angka % (i + 2) == 0:
+      return False
+    i += 6
+  return True
+
+Tugas 3
+def cari_bilangan_prima(array):
+    bilangan_prima_list = []
+    for angka in array:
+        if bilangan_prima(angka):
+            bilangan_prima_list.append(angka)
+    return bilangan_prima_list, len(bilangan_prima_list)
+
+# Contoh penggunaan
+array_angka = [4, 5, 11, 12, 14, 16, 16, 19]
+hasil, jumlah = cari_bilangan_prima(array_angka)
+
+print("Bilangan prima dalam array:", hasil)
+print("Jumlah bilangan prima:", jumlah)
+
+Tugas 
+jumlah= sum (angka)
+rata_rata=sum (angka) //5
+#pilihan yang ditampilkan
+while True:
+    print("\nPilih operasi bilangan yang diinginkan:")
+    print("1. nilai penjumlahan")
+    print("2. nilai rata-rata")
+    print("3. Keluar")
+    #perhitungan
+    pilihan = int(input("Masukkan pilihan: "))
+    if pilihan == 1:
+        print("penjumlahan nilai tersebut adalah:",jumlah)
+    elif pilihan == 2:
+        if angka:
+            print("rata-rata nilai tersebut", rata_rata)
+        else:
+            print("Data nilai masih kosong")
+    elif pilihan == 3:
+        break
+        
+Tugas 4
+def cari_kelipatan(array, kelipatan):
+    kelipatan_list = []
+    for angka in array:
+        if angka % kelipatan == 0:
+            kelipatan_list.append(angka)
+    return kelipatan_list
+if __name__ == "__main__":
+    jumlah_elemen = int(input("Masukkan jumlah elemen dalam array: "))
+    # Membuat array dengan bilangan 1 hingga jumlah_elemen
+    array = list(range(1, jumlah_elemen + 1))
+    print("Data Array:", array)
+    kelipatan = int(input("Masukkan kelipatan yang ingin ditampilkan: "))
+    hasil = cari_kelipatan(array, kelipatan)
+    if hasil:
+        print("Elemen yang merupakan kelipatan dari", kelipatan, ":", hasil)
+    else:
+        print("Tidak ada elemen yang merupakan kelipatan dari", kelipatan)
+
+Tugas 5
+myList = [1, 2, 3, 4, 5]
+myListnew = [77, 99, 66, 88]
+myList.extend(myListnew)
+print('1.', myList)
+myList.sort()
+print('2.', myList)
+myList.reverse()
+print('3.', myList)
+print('4.', myList.index(5))
+myList.remove(99)
+print('5.', myList)
+salinan = myList.copy()
+myList.clear()
+print('6.', myList)
+print('7.', salinan)
+
+Tugas 6
+def pisahkan_genap_ganjil(daftar_angka):
+    angka_genap = []
+    angka_ganjil = []
+    for angka in daftar_angka:
+        if angka % 2 == 0:
+            angka_genap.append(angka)
+        else:
+            angka_ganjil.append(angka)      
+    return angka_genap, angka_ganjil
+if __name__ == "__main__":
+    daftar_angka = [1, 5, 4, 6, 7, 12, 45, 9, 99, 55, 100, 88, 75, 60]
+    angka_genap, angka_ganjil = pisahkan_genap_ganjil(daftar_angka)
+    print(daftar_angka)
+    print("Ini adalah angka genap :", angka_genap)
+    print("Jumlah angka genap :", len(angka_genap), "angka")
+    print("Ini adalah angka ganjil :", angka_ganjil)
+    print("Jumlah angka ganjil :", len(angka_ganjil), "angka")
+
