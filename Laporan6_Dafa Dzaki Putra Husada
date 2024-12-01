@@ -1,0 +1,74 @@
+Tugas 1
+# Himpunan awal
+nilai = {3, 6, 9, 2, 5, 7}
+# Elemen baru yang ingin ditambahkan kedalam himpunan awal
+elemen_baru = {1, 4, 8, 10}
+# Menggabungkan himpunan menggunakan operasi union (|)
+nilai = nilai | elemen_baru
+# Menampilkan himpunan setelah penambahan
+print(nilai)
+
+Tugas 2
+# Himpunan awal
+nilai = {3, 6, 9, 2, 5, 7}
+# Elemen yang ingin ditambahkan ke dalam himpunan awal
+elemen_baru = {1, 4, 8, 10}
+# Elemen yang ingin dihapus
+elemen_hapus = {1, 3, 4, 5, 7, 8, 10}
+# Menambahkan elemen baru
+nilai = nilai.union(elemen_baru)
+print("Setelah penambahan:", nilai)
+# Menghapus elemen
+nilai = nilai.difference(elemen_hapus)
+print("Setelah penghapusan:", nilai)
+
+Tugas 3
+# himpunan
+A = {100, 7, 8}
+B = {200, 4, 5}
+C = {300, 2, 3}
+D = {100, 200, 300}
+# Operasi himpunan
+a = A.intersection(B)  # A AND B
+b = B.intersection(D)  # B AND D
+c = C.intersection(D)  # C AND D
+d = A.intersection(B, C, D)  # A AND B AND C AND D
+# hasil
+print("a. A AND B:", a)
+print("b. B AND D:", b)
+print("c. C AND D:", c)
+print("d. A AND B AND C AND D:", d)
+
+Tugas 4
+# Himpunan
+A = {100, 7, 8}
+B = {200, 4, 5}
+C = {300, 2, 3}
+D = {100, 200, 300}
+# Hasil
+print("a. A U B =", A.union(B))
+print("b. B U C =", B.union(C))
+print("c. B U C U D =", B.union(C, D))
+print("d. A U B U C U D =", A.union(B, C, D))
+
+Tugas 5
+# Himpunan
+A = {'a', 'b', 'c', 'd'}
+B = {'c', 'd', 'e'}
+C = set() 
+# Hasil
+print("a. A symmetric difference B =", A.symmetric_difference(B))
+print("b. B symmetric difference A =", B.symmetric_difference(A))
+print("c. A symmetric difference C =", A.symmetric_difference(C))
+print("d. B symmetric difference C =", B.symmetric_difference(C))
+
+Tugas 6
+# Himpunan
+A = {'a', 'b', 'c', 'd'}
+B = {'c', 'd', 'e'}
+C = set() 
+# Hasil
+print("a. A - B =", A - B)
+print("b. B - A =", B - A)
+print("c. A - C =", A - C)
+print("d. B - C =", B - C)
