@@ -1,0 +1,71 @@
+Tugas 1
+# definisi fungsi print_string  
+def print_string( str ):  
+    """Menampilkan argumen string str ke layar"""
+    print (str)  
+# Kita memanggil fungsi dengan kata kunci  
+print_string( str = "Hello Python") 
+
+Tugas 2
+# Definisi fungsi  
+def print_info( nama, usia ):  
+    """Fungsi ini menampilkan info yang dimasukkan""" 
+    print ("Nama: ", nama)  
+    print ("Usia: ", usia)  
+# Memanggil fungsi  
+print_info( usia = 25, nama = "Budi" ) 
+
+Tugas 3
+def show_data(buku):
+    if len(buku) == 0:
+        print("BELUM ADA DATA")
+    else:
+        for indeks, judul in enumerate(buku):
+            print("[{}] {}".format(indeks, judul))
+
+def insert_data(buku):
+    judul_baru = input("Judul Buku: ")
+    buku.append(judul_baru)
+
+def edit_data(buku):
+    show_data(buku)
+    indeks = int(input("Inputkan ID buku: "))
+    if indeks < len(buku):
+        judul_baru = input("Judul baru: ")
+        buku[indeks] = judul_baru
+    else:
+        print("ID salah")
+
+def delete_data(buku):
+    show_data(buku)
+    indeks = int(input("Inputkan ID buku: "))
+    if indeks < len(buku):
+        del buku[indeks]
+    else:
+        print("ID salah")
+
+def show_menu():
+    print("\nMENU")
+    print("[1] Show Data")
+    print("[2] Insert Data")
+    print("[3] Edit Data")
+    print("[4] Delete Data")
+    print("[5] Exit")
+    return int(input("PILIH MENU> "))
+
+if __name__ == "__main__":
+    buku = []
+    while True:
+        menu = show_menu()
+        if menu == 1:
+            show_data(buku)
+        elif menu == 2:
+            insert_data(buku)
+        elif menu == 3:
+            edit_data(buku)
+        elif menu == 4:
+            delete_data(buku)
+        elif menu == 5:
+            break
+        else:
+            print("Salah pilih!")
